@@ -8,7 +8,7 @@ from src.utils import drop_table
 
 
 def main():
-    conn = psycopg2.connect(host='localhost', database='', user='postgres', password='')  # устанавливаем соединение с конфиг файлом
+    conn = psycopg2.connect(host='localhost', database='postgres', user='postgres', password='')  # устанавливаем соединение с конфиг файлом
     drop_table(conn, 'vacancies')  # удаляем таблицу vacancies
     drop_table(conn, 'employers')  # удаляем таблицу employers
 
